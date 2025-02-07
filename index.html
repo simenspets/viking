@@ -46,6 +46,7 @@
 <body>
   <script src="https://swnevin.github.io/VIF/extensions.js"></script>
   <script type="text/javascript">
+    let Stylesheet = "https://kristoman-rikardo.github.io/buttonlabels/no.css"
     let proactiveMessage = "Hei, jeg hjelper deg gjerne!👋";
 
     (function(d, t) {
@@ -57,6 +58,7 @@
           versionID: 'production',
           allowDangerousHTML: true,
           assistant: {
+            stylesheet: Stylesheet,
             extensions: [FormExtension, WaitingAnimationExtension, DoneAnimationExtension]
           }
         }).then(() => {
